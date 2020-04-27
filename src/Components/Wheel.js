@@ -7,7 +7,7 @@ class Wheel extends Component {
             selectedItem: null,
             finished: null
         }
-        this.drinks = ['2 Drinks', 'Finish UR Beer!', '4 Drinks', 'Take a Shot!', 'Half Ur Beer!', '3 Drinks', 'Finish UR Beer!','2 Drinks','Take a Shot!','1 Drink'];
+        this.drinks = ['2 Drinks', 'Finish UR Beer!', '4 Drinks', 'Take a Shot!', 'Half Ur Beer!', '3 Drinks', 'Finish UR Beer!','2 Drinks','Take a Shot!','Half UR Beer!'];
         this.selectItem = this.selectItem.bind(this);
     }
     selectItem() {
