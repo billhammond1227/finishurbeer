@@ -6,6 +6,7 @@ import PlayerNames from './PlayerNames';
 import InviteLink from './InviteLink';
 import Gallery from './Gallery';
 import Game from './Game';
+import ThankYou from './ThankYou';
 
 class Main extends Component {
     constructor(props) {
@@ -56,6 +57,9 @@ class Main extends Component {
             )}/>
             <Route path="/Gallery/:roomid/:refresh?" render={(params) => (
                 <Gallery {...this.props} loadRoom={this.loadRoom} players={this.state.players} {...params}/>
+            )}/>
+            <Route path="/ThankYou" render={(params) => (
+                <ThankYou />
             )}/>
         </div>
     }

@@ -115,7 +115,7 @@ class Game extends Component {
                         })()}
                     </div>
                 </div>
-                { this.props.room.view !== "gallery" && this.props.room.view !== "wheel" && this.props.room.view !== "dare" ? <a target="_blank" href={`/Gallery/${this.state.roomid}/`} className="uk-button uk-button-secondary uk-margin-medium-top uk-button-large uk-width-1-1 uk-margin-small" onClick={() => { this.nextView("gallery") }}>View Gallery</a> : "" }
+                { this.props.room.view !== "gallery" && this.props.room.view !== "wheel" && this.props.room.view !== "dare" ? <div><a target="_blank" href={`/Gallery/${this.state.roomid}/`} className="uk-button uk-button-secondary uk-margin-medium-top uk-button-large uk-width-1-1 uk-margin-small" onClick={() => { this.nextView("gallery") }}>View Gallery</a><br/><button className="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" onClick={() => { this.nextView("endgame") }}>End Game</button></div> : "" }
         </div>
 
     }
