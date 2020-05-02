@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import icon from '../images/icon-beer.png';
 
 class EndGame extends Component {
     constructor(){
@@ -14,6 +15,7 @@ class EndGame extends Component {
     render(){
         return <div className="uk-text-center">
             <div className="uk-card uk-card-primary uk-card-body">
+                <img src={icon} alt="Beer Icon" className="beer-icon"/>
                 <h3 className="uk-card-title">Completed!</h3>
                 <p>You have completed the game. Review the photo gallery below to make fun of your friends. Come back soon! If you feel enlightened and gasping for air due to laughter then feel free to contribute to my beer fund below. Much appreciated!</p>
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

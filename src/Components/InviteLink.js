@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Logo from './Logo';
 
 class InviteLink extends Component {
     constructor(){
@@ -28,7 +29,7 @@ class InviteLink extends Component {
     render(){
         console.log(this.props.room);
         let players = Object.values(this.props.room.players);
-        return <div className="uk-child-width-1-2@s uk-grid-small uk-flex-center uk-grid-match invite_link_container uk-text-center" data-uk-grid>
+        return <div><Logo/><div className="uk-child-width-1-2@s uk-grid-small uk-flex-center uk-grid-match invite_link_container uk-text-center" data-uk-grid>
                 <div>
                     <div className="uk-card uk-card-primary uk-card-body">
                         <h3 className="uk-card-title uk-text-center">Send this url to your Friends</h3>
@@ -42,7 +43,7 @@ class InviteLink extends Component {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div></div>
     }
 }
 

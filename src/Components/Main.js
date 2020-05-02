@@ -40,27 +40,27 @@ class Main extends Component {
 
     render(){
         return <div>
-            <Route exact path="/" render={() => (
-                <Rating updateVersion={this.updateVersion}/>
-            )} />
-            <Route path="/NumberPlayers" render={() => (
-                <NumberPlayers numplayers={this.state.numplayers} updateNumPlayers={this.updateNumPlayers}/>
-            )}/>
-            <Route path="/PlayerNames" render={() => (
-                <PlayerNames {...this.props} version={this.state.version} numplayers={this.state.numplayers} updatePlayers={this.updatePlayers} players={this.state.players}/>
-            )}/>
-            <Route path="/InviteLink/:roomid" render={(params) => (
-                <InviteLink {...this.props} loadRoom={this.loadRoom} players={this.state.players} {...params}/>
-            )}/>
-            <Route path="/Game/:roomid/:playerkey/:refresh?" render={(params) => (
-                <Game {...this.props} loadRoom={this.loadRoom} players={this.state.players} {...params}/>
-            )}/>
-            <Route path="/Gallery/:roomid/:refresh?" render={(params) => (
-                <Gallery {...this.props} loadRoom={this.loadRoom} players={this.state.players} {...params}/>
-            )}/>
-            <Route path="/ThankYou" render={(params) => (
-                <ThankYou />
-            )}/>
+                <Route exact path="/" render={() => (
+                    <Rating updateVersion={this.updateVersion}/>
+                )} />
+                <Route path="/NumberPlayers" render={() => (
+                    <NumberPlayers numplayers={this.state.numplayers} updateNumPlayers={this.updateNumPlayers}/>
+                )}/>
+                <Route path="/PlayerNames" render={() => (
+                    <PlayerNames {...this.props} version={this.state.version} numplayers={this.state.numplayers} updatePlayers={this.updatePlayers} players={this.state.players}/>
+                )}/>
+                <Route path="/InviteLink/:roomid" render={(params) => (
+                    <InviteLink {...this.props} loadRoom={this.loadRoom} players={this.state.players} {...params}/>
+                )}/>
+                <Route path="/Game/:roomid/:playerkey/:refresh?" render={(params) => (
+                    <Game {...this.props} loadRoom={this.loadRoom} players={this.state.players} {...params}/>
+                )}/>
+                <Route path="/Gallery/:roomid/:refresh?" render={(params) => (
+                    <Gallery {...this.props} loadRoom={this.loadRoom} players={this.state.players} {...params}/>
+                )}/>
+                <Route path="/ThankYou" render={(params) => (
+                    <ThankYou />
+                )}/>
         </div>
     }
 }

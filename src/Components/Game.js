@@ -3,6 +3,7 @@ import Card from './Card';
 import Wheel from './Wheel';
 import Dare from './Dare';
 import EndGame from './EndGame';
+import icon from '../images/icon-beer.png';
 
 class Game extends Component {
     constructor(){

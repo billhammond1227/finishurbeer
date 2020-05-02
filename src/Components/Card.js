@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import icon from '../images/icon-beer.png';
 
 class Card extends Component {
     constructor(props){
@@ -31,6 +32,7 @@ class Card extends Component {
         let description = this.getSafe(() => this.props.dares[id].description);
 
         return <div className="uk-card uk-card-default uk-card-body card_container">
+                <img src={icon} alt="Beer Icon" className="beer-icon"/>
                 <h3 className="uk-card-title">{ this.getSafe(() => this.props.room.card.status) === "show" ? this.getSafe(() => this.props.room.card.title) : ""}</h3>
                 { this.getSafe(() => this.props.room.card.status) === "show" ? <p>{this.getSafe(() => this.props.room.card.description)}</p> : ""}
                 { this.getSafe(() => this.props.room.card.status) === "hide" ? <button className="uk-button uk-button-secondary uk-button-large uk-width-1-1 uk-margin-small" onClick={() => { this.props.updateCard(this.props.room, title, description, id); }}>Reveal Card</button> : ""}

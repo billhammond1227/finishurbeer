@@ -194,7 +194,17 @@ a.uk-button, button.uk-button {
     padding-bottom: 5px;
     max-width: 500px;
 }
-
+/* Logo */
+.icon-container {
+  img {
+    max-height:100px;
+  }
+}
+.beer-icon {
+  width: auto !important;
+  max-height: 100px;
+  margin-bottom:0 !important;
+}
 /* Invite Link */
 .invite_link_container {
     h3 {
@@ -253,4 +263,7 @@ button.chooseFileButton {
 }
 .player_name_even {
   background: lighten(#1e87f0, 10%) !important;
+}
+.uk-card-title {
+  margin-top:0;
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import icon from '../images/icon-beer.png';
 
 class Gallery extends Component {
     constructor(){
@@ -33,6 +34,7 @@ class Gallery extends Component {
         }
 
         return <div className="game_container uk-text-center">
+                <img src={icon} alt="Beer Icon" className="beer-icon"/>
                 <div className="uk-grid-match uk-flex-center uk-child-width-1-2@s uk-text-center" data-uk-grid>
                     { url.map((image, index) => 
                             <div key={index}><div className="uk-card uk-card-default uk-card-body"><a href={image} target="_blank"><img key={index} src={image} alt="Image Gallery" /></a></div></div>

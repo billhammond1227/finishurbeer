@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Logo from './Logo';
 
 class PlayerNames extends Component {
     constructor(){
@@ -51,7 +52,7 @@ class PlayerNames extends Component {
                     </div>
                 </div>)
         }
-        return <div className="uk-child-width-1-2@s uk-flex-center uk-grid-small uk-grid-match player_names_container uk-text-center" data-uk-grid>
+        return <div><Logo/><div className="uk-child-width-1-2@s uk-flex-center uk-grid-small uk-grid-match player_names_container uk-text-center" data-uk-grid>
             <div>
                 <div className="uk-card uk-card-primary uk-card-body">
                     <h3 className="uk-card-title">Enter Player Names</h3>
@@ -62,7 +63,7 @@ class PlayerNames extends Component {
                     </form>
                 </div>
             </div>
-        </div>
+        </div></div>
     }
 }
 

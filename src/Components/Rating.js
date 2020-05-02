@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Logo from './Logo';
 
 class Rating extends Component {
     render(){
-        return <div className="uk-child-width-1-2@s uk-grid-small uk-grid-match uk-text-center" data-uk-grid>
+        return <div>
+            <Logo/>
+            <div className="uk-child-width-1-2@s uk-grid-small uk-grid-match uk-text-center" data-uk-grid>
             <div>
                 <div className="uk-card uk-card-default uk-card-body">
                     <h3 className="uk-card-title">PG Rated Game*</h3>
@@ -18,6 +21,7 @@ class Rating extends Component {
                     <Link to="/NumberPlayers" className="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" onClick={() => { this.props.updateVersion("R") }}>Play at your own risk!</Link>
                 </div>
             </div>
+        </div>
         </div>
     }
 }
